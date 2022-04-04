@@ -1,0 +1,42 @@
+.sangria{
+    /* padding-bottom: 40px; */
+    padding: 20px;
+    font-family: monospace;
+    font-size: 15px;
+    margin: 7px;
+    color: rgb(255, 255, 255);
+    /* text-align: center; */
+    background-color: rgb(43, 43, 43);
+    width: 20%;
+    height: 15%;
+    border-radius: 2%;
+    border: 3px solid white;
+}
+
+
+
+.Titulo{
+    padding: 30px;
+    font-family: monospace;
+    font-size: 70px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(43, 43, 43);
+    /* width: 950px; */
+    border: 3px solid white;
+    text-align: center;
+
+}
+.Links{
+    color: rgb(33, 126, 180);
+}
+.listado{
+    padding: 20px;
+    font-family: monospace;
+    font-size: 15px;
+    margin: 7px;
+    color: rgb(255, 255, 255);
+    /* text-align: center; */
+    background-color: rgb(43, 43, 43);
+    border-radius: 2%;
+    
+}
