@@ -6,11 +6,14 @@
     margin: 7px;
     color: rgb(255, 255, 255);
     /* text-align: center; */
-    background-color: rgb(43, 43, 43);
+    background-color: rgb(43, 43, 43);          
     width: 20%;
     height: 15%;
     border-radius: 2%;
-    border: 3px solid white;
+    border: 3px solid white;                                                        /*BORDER: dotted, dashed, solid, double, groove, ridge, inset, outset, none, hidden 
+    /* esto centra todo pero yo lo quiero usar en el id precentacion */               
+    margin-left: auto;                                                                 
+    margin-right: auto;                                                                
 }
 
 
@@ -30,13 +33,48 @@
     color: rgb(33, 126, 180);
 }
 .listado{
-    padding: 20px;
+   
     font-family: monospace;
     font-size: 15px;
-    margin: 7px;
+    margin: 5px;
     color: rgb(255, 255, 255);
     /* text-align: center; */
     background-color: rgb(43, 43, 43);
     border-radius: 2%;
+
+    column-count: 4;
+    column-width: 100px;
     
+}
+.precentacion{
+    text-align: center;
+    position: relative;
+    
+}
+table{
+
+    border-collapse: collapse;
+}
+td{
+    border: solid 3px white;
+    padding: 23px;
+    
+}
+    /* cuando pongo el mause sobre todo debia ponerse un fondo rojo en los cuadros */
+div:hover{
+    /* background-color: red; */
+    /* box-shadow: 0 0.1rem 0.3rem rgba(255, 0, 0, 1); */
+    
+}
+article:hover{
+    box-shadow: 0 0.1rem 0.3rem rgba(255, 0, 0, 0.4);
+}
+a{
+
+    /* le doy una animacion para trancisionar el color  */
+    transition: color 0.4s ease;
+}
+a:hover{
+    /* cuando pongo el mause arriba de los links se pone rojo */
+    color: red;
 }
