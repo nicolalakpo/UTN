@@ -1,0 +1,60 @@
+.contenedor{
+    
+    background-color: aquamarine;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.BOX{
+
+
+    background-color: blue;
+    width:  100px;
+    height:  100px;
+    color: white;
+    /* display: inline-flex;
+    flex-wrap: nowrap; */
+
+    
+
+    text-align: center;
+    font-size: 50 px;
+    margin: 10 px;
+
+}
+.BOX2{
+
+
+    background-color: red;
+    width:  100px;
+    height:  100px;
+    color: white;
+    /* display: inline-flex;
+    flex-wrap: nowrap; */
+
+    
+
+    text-align: center;
+    font-size: 50 px;
+    margin: 10 px;
+
+}
+.BOX3{
+
+
+    background-color: green;
+    width:  100px;
+    height:  100px;
+    color: white;
+    /* display: inline-flex;
+    flex-wrap: nowrap; */
+
+    
+
+    text-align: center;
+    font-size: 50 px;
+    margin: 10 px;
+
+}
