@@ -1,0 +1,49 @@
+.Titulo{
+    background-color: black;
+
+    font-size: 50px;
+    color: white;
+}
+.Informacion{
+
+    background-color: darkblue;
+    color: thistle;
+    width: 100%;
+    height: 300px;
+    font-size: 20px
+}
+
+.texto{
+    color: chartreuse;
+    font-size: 10px;
+}
+
+.Mensaje{
+    background-color: aquamarine;
+    color: black;
+
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.informacionFinal{
+    background-color: green;
+    color: yellow;
+    
+    
+    display: flex;
+    justify-content: space-around
+    
+}
+.Apartado{
+    width: 50%;
+    background-color: blue;
+    
+    
+}
+.MasMensaje{
+    background-color: brown;
+    width: 50%;
+    
+}
