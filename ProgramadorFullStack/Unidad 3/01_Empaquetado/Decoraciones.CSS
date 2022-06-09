@@ -241,5 +241,25 @@ body {
     min-width: 80px;
     
 }
-
+.imagesTortas{
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Great Vibes', cursive;
+    margin: 0px 500px 20px ;
+    font-size: 30px;
+    gap: 30px;
+}
+.imagesTortas img{
+    height: 400px;
+    width: 400px;
+    border-radius: 20px;
+    
+}
+.imagesTortas p{
+    background-color:  red;
+    border-radius: 20px;
+    border: 5px solid black;
+    text-align: center;
+    
+}
 /* FinContactanos */
