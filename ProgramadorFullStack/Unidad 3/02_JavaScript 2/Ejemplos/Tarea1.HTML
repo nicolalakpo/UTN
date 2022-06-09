@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea1</title>
+</head>
+<body>
+    <div class="colores">
+        <div class="Rojo" onclick="cambiarFondo(`Rojo`)"> </div>
+        <div class="verde" onclick="cambiarFondo(`verde`)"> </div>
+        <div class="azul" onclick="cambiarFondo(`azul`)"></div>
+    </div>
+
+    <style>
+        body{
+            background-color: black;
+        }
+        .colores{
+            display: flex;
+        }
+        .Rojo{
+            width: 100px;
+            height: 100px;
+            background-color:  red;
+            cursor: pointer;
+        }
+        .verde{
+            background-color: green;
+            width: 100px;
+            height: 100px;
+        }
+        .azul{
+            background-color: blue;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+    <script>
+        function cambiarFondo(color){
+            document.querySelector('body').style.background = color;
+        }
+        
+    </script>
+    
+</body>
+</html>
