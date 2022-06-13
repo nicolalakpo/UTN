@@ -5,18 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tarea1</title>
 </head>
-<body>
-    <div class="colores">
-        <div class="Rojo" onclick="cambiarFondo(`Rojo`)"> </div>
-        <div class="verde" onclick="cambiarFondo(`verde`)"> </div>
-        <div class="azul" onclick="cambiarFondo(`azul`)"></div>
+<body id="cuerpo" >
+    <div id="colores">
+        <div class="Rojo" onclick="cambiarFondo('red')"> </div>
+        <div class="verde" onclick="cambiarFondo('green')"> </div>
+        <div class="azul" onclick="cambiarFondo('blue')"></div>
     </div>
-
     <style>
         body{
             background-color: black;
         }
-        .colores{
+        #colores{
             display: flex;
         }
         .Rojo{
@@ -37,11 +36,13 @@
         }
     </style>
     <script>
+        // function cambiarFondo(color){
+        //     document.querySelector('body').style.background = color;
+        // }
         function cambiarFondo(color){
-            document.querySelector('body').style.background = color;
-        }
-        
-    </script>
-    
+                console.log(color)
+                document.getElementById('cuerpo').style.background = color;
+        }      
+    </script>    
 </body>
 </html>

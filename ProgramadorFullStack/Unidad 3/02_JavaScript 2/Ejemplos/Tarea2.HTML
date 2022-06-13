@@ -6,24 +6,44 @@
     <title>Tarea1</title>
 </head>
 <body>
-    <div class="contador">
+    <div class="contador" id="contador">
         
-            Caracteres:
-        
+            Caracteres:      
     </div>
     <div>
-        <textarea name="" id="textos" cols="30" rows="10"></textarea>
+        <textarea name="" id="textos" cols="30" rows="10"></textarea>       
     </div>
     <script>
-        let contadores = document.getElementsByClassName(contador)
-        let texto = document.getElementById("textos"); 
-        function sumarCaracteres()
+        let texto = document.getElementById("textos");
+        let contador = 0;
+        texto.addEventListener("keyup", function(evento){
+            
+            
+            
+            if(evento.keyCode == 8)
+            contador --;
+            else
+            contador ++;
+            
+            if(contador <= 0)
+            contador = 0;
+            sumarCaracteres();
+
+
+        })
+        // let telca = event.key;
+        function sumarCaracteres(eventos)
         {
-           if(texto.value.length === texto.value.length ++ || texto.value.length === texto.value.length --) 
-                document.write("Caracteres: " + texto.value.length)
-             
+              console.log(document.getElementById("contador").value)
+              let aux = document.getElementById("contador").value = "Caracteres " + contador;
+              document.getElementById("contador").innerHTML =  aux;
+
+              
+            //   keycode = (eventos.keyCode === "Backspace")
+               
         }
-        
+
+
 
 
     //     <textarea name="" id="texto" cols="30" rows="10"></textarea>
