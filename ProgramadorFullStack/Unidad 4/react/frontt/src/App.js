@@ -10,10 +10,15 @@ import Index from './pages/Index';
 import Nosotros from './pages/Nosotros';
 import Tortas from './pages/Tortas.js';
 
+
+
+
+import './styles/Decoraciones.css'
+
 function App() {
   return (
     <div className="App">
-        <Footer/>
+        
         <Header/>
         <BrowserRouter>
           <Nav/>

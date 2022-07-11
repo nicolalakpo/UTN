@@ -5,12 +5,7 @@ const Nosotros = (props) => {
             <div className="fondo">
 
             </div>
-            <div className="titulo">
-                <h1>
-                    Tortas hechas en casa
-                </h1>
-
-            </div>
+           
 
 
             <div className ="Precentacion">

@@ -6,12 +6,7 @@ const Contactanos = (props) => {
             <div className="fondo">
 
             </div>
-            <div className="titulo">
-                <h1>
-                    Tortas hechas en casa
-                </h1>
 
-            </div>
 
             <div className="Contacto">
 
@@ -31,6 +26,13 @@ const Contactanos = (props) => {
                             <input type="text" Emails placeholder="Su nombre" />
                         </p>
 
+
+                        <p>
+                            <label for="text">Mensaje</label>
+                            <br />
+                            <textarea name="" placeholder="Comprame@hotmail.com"></textarea>
+                        </p>
+
                         <p>
                             <input type="submit" value="Enviar" />
                         </p>
@@ -40,18 +42,18 @@ const Contactanos = (props) => {
 
                 </div>
 
-                <div className ="OtrosContactos">
+                <div className="OtrosContactos">
 
 
-            <h1>
-                Otras Formas de Contactarme
-            </h1>
-            <ul>
-                <li>Telefono: 0800 666 1234</li>
-                <li>Instagram: Lehmann's Cakes and cookies</li>
-            </ul>
+                    <h1>
+                        Otras Formas de Contactarme
+                    </h1>
+                    <ul>
+                        <li>Telefono: 0800 666 1234</li>
+                        <li>Instagram: Lehmann's Cakes and cookies</li>
+                    </ul>
 
-        </div>
+                </div>
 
 
 

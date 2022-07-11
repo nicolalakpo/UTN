@@ -1,14 +1,12 @@
 import React from "react"
+
+
+
 const Index = (props) =>{
     return(
 
         <>
-        <div class="titulo">
-        <h1>
-            Tortas hechas en casa
-        </h1>
-
-    </div>
+        
     <div className="contenedor">
         <div className="info">
             <h2>
