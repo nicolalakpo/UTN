@@ -1,0 +1,12 @@
+<h1>{{title}}</h1>
+{{#if conocido}}
+    <p>Hola {{nombre}} <ahref = "/salir">salir</a></p>
+{{/if}}
+
+{{#unless conocido}}
+    <p>no te conozco</p>
+    <form action="/ingresar" method="post">
+        <imput type = "text"
+        name="nombre"><button>ingresar</button>
+    </form>
+{{/unless}}    
