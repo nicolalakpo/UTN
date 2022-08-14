@@ -26,12 +26,17 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+/////
 app.use(session({
   secret:'palabraSecreta',
   cookie: {maxAge:null},
   resave: false,
   saveUninitialized: true
-}))
+}));
+
+
+
+/////
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
@@ -39,10 +44,6 @@ app.use('/users', usersRouter);
 
 ////
 app.use('/admin/login', loginRouter);
-app.use('/admin/novedades', secured, adminNovedadesRouter);
-app.use('/admin/novedades', adminRouter);
-
-////
 
 
 ////
@@ -53,14 +54,14 @@ secured = async(req, res, next) =>{
     if(req.session.id_usuario){
       next();
     }else{
-      res.redirect('/admin/login')
+      res.redirect('/admin/login');
     }
   }catch(error){
     console.log(error);
   }
 }
-
-/////
+ app.use('/admin/novedades', secured, adminRouter);
+// app.use('/admin/novedades', secured, adminNovedadesRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
