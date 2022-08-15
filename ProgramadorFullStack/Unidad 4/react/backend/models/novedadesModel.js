@@ -3,7 +3,7 @@ var pool = require('./bd');
 
 async function getNovedades(){
     
-        var query = 'select * from novedades order by id desc';
+        var query = 'select * from novedades order by id desc'; //limit y un numero le pongo un limite
         //cuando hacer var filas(row)se conecta con la query, busca el selec, y cuando pase los
         //paranetros(user y pass) y al estar en el md5 la va a encriptar 
         var rows = await pool.query(query);
