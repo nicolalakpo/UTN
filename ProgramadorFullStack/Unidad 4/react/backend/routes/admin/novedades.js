@@ -50,6 +50,40 @@ router.get('/eliminar/:id', async(req, res,next) => {
     await novedadesModel.delateNovedadesById(id);
     res.redirect('/admin/novedades');
 });
+router.get('/modificar/:id', async(req, res, next) =>{
+    var id = req.params.id;
+    console.log(req.params.id);
+    var novedad = await novedadesModel.getNovedadesById(id);
+
+    res.render('admin/modificar', {
+        layout: 'admin/layout',
+        novedad
+    })
+});
+
+router.post('/modificar', async(req, res, next) => {
+    try{
+        var obj = {
+            producto: req.body.producto,
+            descripcion: req.body.descripcion,
+            valor: req.body.valor
+        }
+        console.log(obj)
+   
+
+    await novedadesModel.modificarNovedadesById(obj, req.body.id);
+    res.redirect('/admin/novedades');
+
+
+}catch(error){
+    console.log(error)
+    res.render('admin/modificar',{
+        layout: 'admin/layout',
+        error: true,
+        message: 'No se modifico la novedad'
+    })
+}
+})
 
 
 
