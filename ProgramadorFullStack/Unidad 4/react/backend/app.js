@@ -3,6 +3,8 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+var fileUpLoad = require('express-fileupload');
+
 ///
 require('dotenv').config();
 var loginRouter = require('./routes/admin/login');
@@ -60,6 +62,12 @@ secured = async(req, res, next) =>{
     console.log(error);
   }
 }
+
+app.use(fileUpLoad({
+  useTempFiles: true,
+  tempFileDir: '/tmp/'
+}));
+
  app.use('/admin/novedades', secured, adminRouter);
 // app.use('/admin/novedades', secured, adminNovedadesRouter);
 
