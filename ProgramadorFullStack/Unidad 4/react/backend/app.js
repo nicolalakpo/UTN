@@ -4,12 +4,15 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var fileUpLoad = require('express-fileupload');
+var cors = require('cors');
 
 ///
 require('dotenv').config();
 var loginRouter = require('./routes/admin/login');
 
 var adminRouter = require('./routes/admin/novedades');
+
+var apiRouter = require('./routes/api');
 
 ////
 var indexRouter = require('./routes/index');
@@ -69,6 +72,8 @@ app.use(fileUpLoad({
 }));
 
  app.use('/admin/novedades', secured, adminRouter);
+
+ app.use('/api' ,cors(), apiRouter);
 // app.use('/admin/novedades', secured, adminNovedadesRouter);
 
 // catch 404 and forward to error handler
