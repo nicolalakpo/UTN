@@ -9,6 +9,7 @@ import EventosEspeciales from './pages/EventosEspeciales';
 import Index from './pages/Index';
 import Nosotros from './pages/Nosotros';
 import Tortas from './pages/Tortas.js';
+// import NovedadesPage from './pages/novedades';
 
 
 
@@ -27,7 +28,8 @@ function App() {
             <Route path= "/eventos-especiales" element = {<EventosEspeciales/>} /> 
             <Route path= "/contactanos" element = {<Contactanos/>} /> 
             <Route path= "/nosotros" element = {<Nosotros/>} /> 
-            <Route path= "/tortas" element = {<Tortas/>} /> 
+            <Route path= "/tortas" element = {<Tortas/>} />
+            {/* <Route path= "/novedades" element = {<NovedadesPage/>} />  */}
             
           </Routes>
         </BrowserRouter>
