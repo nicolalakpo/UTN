@@ -1,0 +1,392 @@
+.titulo {
+
+    background-color: burlywood;
+    margin: 0px;
+    padding: 0px;
+    height: 150px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: 'Great Vibes', cursive;
+    opacity: 90%;
+    width: 100%;
+
+}
+
+nav {
+    background-color: bisque;
+    margin-bottom: 20px;
+    width: 100%;
+
+
+}
+
+nav ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+
+    /* aca pongo un item uno al lado del otro pero no entienco como */
+}
+
+nav ul li {
+    flex-grow: 1;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 3px 6px;
+    display: block;
+    text-align: center;
+
+    font-family: 'Great Vibes', cursive;
+    font-size: 30px;
+}
+
+nav ul li a.activo {
+    background-color: red;
+}
+
+nav ul li a:hover {
+    background-color: red;
+}
+
+.holder {
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+body {
+    background: url(../../public/IMG/fondo.jpg) no-repeat center center fixed;
+    background-size: cover;
+    /* min-height: 100vh; */
+}
+
+.contenedor {
+    /* display: flex;
+    inline-size: 10px; */
+    justify-content: space-evenly;
+
+    background: #d27b52;
+    background: linear-gradient(175deg, #d27b52 0%, #763012 80%);
+    background: -webkit-linear-gradient(175deg, #d27b52 0%, #763012 80%);
+    background: -moz-linear-gradient(175deg, #d27b52 0%, #763012 80%);
+
+    border: 5px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 0px 400px 20px;
+    display: flex;
+    gap: 30px;
+    /*esto es para seprarar los elementos */
+    align-items: center;
+
+    font-family: 'Great Vibes', cursive;
+    font-size: 30px;
+    text-align: center;
+
+    opacity: 95%;
+
+
+
+}
+
+.contenedor .info {
+    background-color: #ffffff10;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 10px;
+    padding: 10px;
+
+    width: 500px;
+
+}
+
+.contenedor .info h2 {
+    color: black;
+    font-style: italic;
+    border-bottom: 2px solid black;
+    padding-bottom: 5px;
+
+    opacity: 100%;
+
+
+}
+
+.contenedor .info p {
+    font-size: 30px;
+    padding: 0px;
+
+    opacity: 100%;
+}
+
+.contenedor img {
+    height: 300px;
+    width: 350px;
+
+    border-radius: 10px;
+    display: block;
+
+    opacity: 100%;
+
+}
+
+.contenedor:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.Cartel{
+    position: fixed;
+    top: 0px;
+    right: -185px;
+    padding-left: 0%;
+}
+
+
+
+
+
+/* Nosotros */
+
+.Precentacion {
+
+
+    background: #827bd8;
+    background: radial-gradient(circle farthest-corner at top center, #827bd8 10%, #3151dd 30%);
+    background: -webkit-radial-gradient(circle farthest-corner at top center, #827bd8 10%, #3151dd 30%);
+    background: -moz-radial-gradient(circle farthest-corner at top center, #827bd8 10%, #3151dd 30%);
+
+    margin: 0px 400px 20px;
+
+    justify-content: space-evenly;
+
+    border: 5px solid black;
+    display: flex;
+    border-radius: 10px;
+
+    padding: 20px;
+
+    gap: 30px;
+    /*esto es para seprarar los elementos */
+    align-items: center;
+
+    font-family: 'Great Vibes', cursive;
+    font-size: 30px;
+    text-align: center;
+
+    /* opacity: 95%; */
+}
+
+.Precentacion img {
+    border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+
+
+    opacity: 100%;
+}
+
+.Precentacion p {
+    opacity: 100%;
+    color: white;
+}
+
+
+/* FinDeNosotros */
+
+
+/* Contactanos */
+.formulario{
+    margin: 0px;
+}
+.formulario p {
+    font-size: 25px;
+}
+.formulario p input{
+    border-radius: 10px;
+}
+.formulario p textarea{
+    resize: none;
+    border-radius: 10px;
+    width: 400px;
+    height: 100px;
+}
+.formulario input[type="submit"]{
+    background: darkturquoise;
+    color: black;
+    width: auto;
+
+    position: relative;
+    left: 200px;
+
+    transition: all 0.5s ease;
+
+}
+
+.formulario input[type="submit"]:hover{
+    background-color: #3151dd;
+}
+.Contacto{
+    margin: 0px 400px 20px;
+    display: flex;
+    justify-content: space-evenly;
+    font-family: 'Great Vibes', cursive;
+    font-size: 20px;
+
+    color: white;
+    border-radius: 10px;
+
+
+    border: 5px solid black;
+
+
+
+    background: #827bd8;
+    background: radial-gradient(circle farthest-corner at top center, #827bd8 10%, #3151dd 30%);
+    background: -webkit-radial-gradient(circle farthest-corner at top center, #827bd8 10%, #3151dd 30%);
+    background: -moz-radial-gradient(circle farthest-corner at top center, #827bd8 10%, #3151dd 30%);
+
+    
+}
+.OtrosContactos ul li{
+    font-size: 25px;
+    
+}
+.formulario p label{
+    min-width: 80px;
+
+}
+/* finContactanos */
+
+.horizontal-parent {
+    top: -1rem;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.horizontal-child {
+    width: 100vh;
+    height: 100vw;
+    overflow: scroll;
+    transform-origin: 100% 0%;
+    transform: rotate(-90deg) translateY(-100vh);
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.horizontal-child .ordenImagen {
+    height: calc(95vh - 2rem);
+    width: calc(215vh - 2rem);
+    padding: 2rem;
+    transform-origin: 0% 0%;
+    columns: 5;
+    column-gap: 0;
+    font-size: 1.3rem;
+    transform: rotate(90deg) translateY(-100%);
+  }
+
+.ImagenFoto{
+    display: flex;
+    height: 500px;
+    width: 390px;
+    background-color: white;
+    /* margin: 0px 500px 20px ; */
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 3px;
+    
+}
+
+.ImagenFotoInterior img{
+    height: 350px;
+    width: 350px;
+    margin: 20px;
+    border: 1px solid black;
+    border-radius: 3px;
+    /* display: flex; */
+    /*justify-content: center;*/
+    align-items: center;
+}
+
+.ImagenFotoInterior p{
+    justify-content: center;
+    font-family: 'Great Vibes', cursive;
+    font-size: 30px;
+}
+
+
+/* .ordenImagen{
+    display: flex;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    /* margin: 0px 100px 20px ;
+    gap: 30px;
+
+    margin: 300px 500px 20px ;  */
+
+    /* overflow: scroll;
+    transform-origin: 0% 0%;
+    transform: rotate(90deg) translateY(-100%); */
+
+    /* width: 100vw;
+    height: calc(100vh - 2rem);
+    transform-origin: 0% 0%;
+    column-width: 350px;
+    column-gap: 0px;
+    transform: rotate(-90deg) translateY(-100%); 
+
+}
+*/
+
+/* .ordenImagen::-webkit-scrollbar{
+    display: none;
+    transform-origin: 100% 0%;
+    transform: rotate(90deg) translateX(0%);
+} */
+
+
+/* .imagesTortas{
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Great Vibes', cursive;
+    margin: 0px 500px 20px ;
+    font-size: 30px;
+    gap: 30px;
+
+}
+.imagesTortas img{
+    height: 400px;
+    width: 400px;
+    border-radius: 20px;
+
+}
+.imagesTortas p{
+    background-color:  red;
+    border-radius: 20px;
+    border: 5px solid black;
+    text-align: center;
+
+} */
+/* FinContactanos */
+
+
+
+
+.futer{
+    background-color: red;
+    height: 50px;
+    width: 100%;
+    /* display: flex; */
+    justify-content: flex-end;
+    align-items: center;
+}
+.futer p{
+    text-align: center;
+}
