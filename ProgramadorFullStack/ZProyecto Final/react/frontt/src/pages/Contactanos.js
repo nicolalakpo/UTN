@@ -9,6 +9,7 @@ const Contactanos = (props) => {
     const initialForm = {
         nombre: '',
         telefono: '',
+        mails: '',
         mensaje: ''
     }
 
@@ -69,6 +70,11 @@ const Contactanos = (props) => {
                             <label for="telefono">Telefono</label>
                             <br />
                             <input type="text" name="telefono" placeholder="Su telefono" value={formData.telefono} onChange={handleChange} />
+                        </p>
+                        <p>
+                            <label for="mails">Mail</label>
+                            <br />
+                            <input type="text" name="mails" placeholder="Su Mail" value={formData.mails} onChange={handleChange} />
                         </p>
                         <p>
                             <label for="mensaje">Mensaje</label>

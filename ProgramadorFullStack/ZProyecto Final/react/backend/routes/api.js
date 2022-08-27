@@ -39,7 +39,7 @@ router.post('/contacto', async(req, res)=> {
         subject: 'Contacto web',
         html: `${req.body.nombre} se conecto a traves de
         la web y quiere más informacion a este correo : 
-        ${req.body.mensaje} <br> Ademas, hizo el siguiente 
+        ${req.body.mails} <br> Ademas, hizo el siguiente 
         comentario : ${req.body.mensaje} <br> Su tel es: 
         ${req.body.telefono}`        
     }
