@@ -27,8 +27,8 @@ const Contactanos = (props) => {
         e.preventDefault();
         setMsg('');
         setSending(true)
-        const response = await axios.post('http://localhost:3000/api/contacto', formData);
-        
+        const response = await 
+    axios.post('http://localhost:3000/api/contacto', formData);   
         setSending(false)
         setMsg(response.data.message);
         if (response.data.error === false) {
@@ -51,7 +51,7 @@ const Contactanos = (props) => {
 
 
 
-            <div>
+                <div>
                     <h1>Mandame tu comentario</h1>
 
                     <form action="/contacto" method="post" onSubmit={handleSubmit} className="formulario">
