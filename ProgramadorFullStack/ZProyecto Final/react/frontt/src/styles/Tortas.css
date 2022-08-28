@@ -7,7 +7,7 @@
 .slider{
     display: flex;
     cursor: grab;
-    width: 4500px;
+    width: 4000px;
 }
 .item{
     height: 40rem;
