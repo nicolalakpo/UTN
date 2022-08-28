@@ -57,24 +57,25 @@ const Index = (props) =>{
         <div className ="info">
             <h2>
 
-                Lemon Pai como el de la abuela
+                Torta de rocklets
 
             </h2>
 
             <p>
                     <br/>
-                    Fina base de masa.
+                    Biscochuelo de Chocolate
                     <br/>
-                    Abundante limin.
+                    rocklets y bombones
                     <br/>
-                    Con mas limon.
+                    relleno de dulce de leche
                   
             </p>
 
         </div>    
         
 
-        <img src="IMG/bowni.jpeg" alt="" />
+        {/* <img src="IMG/bowni.jpeg" alt="" />; */}
+        <img src="IMG/TortaRocklets.jpg" alt="" />;
     </div>
 
 
@@ -82,32 +83,103 @@ const Index = (props) =>{
         <div className ="info">
             <h2>
 
-                Lemon Pai como el de la abuela
+                Flores de chocolate
 
             </h2>
 
             <p>
                     <br/>
-                    Fina base de masa.
+                    Biscochuelo de vainilla
                     <br/>
-                    Abundante limin.
+                    mousse de chocolate
                     <br/>
-                    Con mas limon.
+                    relleno de crema y frutos rojos
                   
             </p>
 
         </div>    
         
 
-        <img src="IMG/lemon top.jpeg" alt="" />
+        <img src="IMG/tortaChocolate.png" alt="" />
+    </div>
+
+    <div className = "contenedor">
+        <div className ="info">
+            <h2>
+
+                Torta Ferrero
+
+            </h2>
+
+            <p>
+                    <br/>
+                    Biscochuelo marmolado
+                    <br/>
+                    bañado en fino chocolate rodeado de bombones
+                    <br/>
+                    relleno de dulce de leche
+                  
+            </p>
+
+        </div>    
+        
+        <img src="IMG/TortaFerrero.jpg" alt="" />;
+    </div>
+
+    <div className = "contenedor">
+        <div className ="info">
+            <h2>
+
+                Torta Frutal
+
+            </h2>
+
+            <p>
+                    <br/>
+                    Biscochuelo de vainilla
+                    <br/>
+                    frutilla, mandarina, kiwi, moras y anana
+                    <br/>
+                    relleno de crema y durazno
+                  
+            </p>
+
+        </div>    
+        
+        <img src="IMG/TortaFruta.jpg" alt="" />;
     </div>
 
 
 
-    <div class="Cartel">
+    <div className = "contenedor">
+        <div className ="info">
+            <h2>
+
+                Torta frutos rojos
+
+            </h2>
+
+            <p>
+                    <br/>
+                    Biscochuelo de vainilla
+                    <br/>
+                    frutilla, mora, 
+                    <br/>
+                    relleno de nutella
+                  
+            </p>
+
+        </div>    
+        
+        <img src="IMG/TortaCasamiento.jpeg" alt="" />;
+    </div>
+
+
+
+    {/* <div class="Cartel">
         
         <img src="IMG/cartelmejorado.png" alt="" />
-    </div>
+    </div> */}
         </>
     )
 }
